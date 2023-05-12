@@ -5,6 +5,7 @@ const jsons: HomeJson[] = [
   {
     title: 'ATHLETS',
     image: '/imgs/player1.png',
+    padding: 'left',
     articles: [
       {
         title: 'CONNECTION',
@@ -25,6 +26,7 @@ const jsons: HomeJson[] = [
   {
     title: 'PLAYERS',
     image: '/imgs/player2.png',
+    padding: 'right',
     articles: [
       {
         title: 'CONNECTION',
@@ -45,7 +47,7 @@ const jsons: HomeJson[] = [
 
 const Home = () => {
   return (
-    <main>
+    <main className="container mx-auto">
       {jsons.map((json, index) => {
         return <HomeItem index={index} json={json} key={index} />
       })}

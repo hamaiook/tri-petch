@@ -17,6 +17,10 @@ module.exports = {
         B1: '#090C35',
       },
     },
+    screens: {
+      md: '768px',
+      lg: '1280px',
+    },
   },
   plugins: [],
 }
